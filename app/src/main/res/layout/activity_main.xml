@@ -10,21 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:contentDescription="@string/profile"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        app:srcCompat="@drawable/profile" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
+        android:layout_above="@id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:orientation="horizontal">
 
         <TextView
@@ -40,8 +31,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
             android:textSize="@dimen/activity_font_size"
             android:text="@string/profile_feel" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/profile"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:srcCompat="@drawable/profile" />
 </RelativeLayout>
